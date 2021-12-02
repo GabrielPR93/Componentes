@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/item1"
+        android:icon="@android:drawable/stat_notify_chat"
+        android:title="Nuevo"
+        app:showAsAction="always|withText" />
+    <item
+        android:id="@+id/item2"
+        android:icon="@android:drawable/ic_delete"
+        android:title="Borrar"
+        app:showAsAction="ifRoom|withText" />
+    <item
+        android:id="@+id/item3"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:title="Editar"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/item4"
+        android:icon="?attr/actionModePasteDrawable"
+        android:title="Nuevo"
+        app:showAsAction="ifRoom">
+        <menu>
+            <item
+                android:id="@+id/opc1"
+                android:title="opc1" />
+            <item
+                android:id="@+id/opc2"
+                android:title="opc2" />
+        </menu>
+    </item>
+</menu>
